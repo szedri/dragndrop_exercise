@@ -1,0 +1,117 @@
+
+body{
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 1em; 
+    line-height: 1.5em;
+    color: #000000;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+    
+#dragScriptContainer{ /* BIG DIV containing HTML needed for the entire script */
+    width: 700px;
+    margin: 0 auto;
+    border: none;
+    height: 200px;
+    margin-top: 40px;
+}
+    
+#questionDiv{ /* Big div for all the questions */
+    float: right;
+    width: 380px;
+    padding: 2px;
+}
+
+#answerDiv{ /* Big div for all the answers */
+    float: left;
+    width: 292px;
+    padding: 2px;    
+}
+
+#questionDiv div, #answerDiv div, #dragContent div{ /* General rules for small divs - i.e. specific questions and answers */
+    width: 310px;      
+    float: left;
+    margin: 0 2px 2px 0;
+    text-align: center;
+}
+
+#dragContent div{ /* Drag content div - i.e. specific answers when they are beeing dragged */
+    border: 1px solid #000;
+}
+
+#answerDiv .dragDropSmallBox{ /* Small answer divs */
+    border: 1px solid #000;
+    cursor: pointer;
+    width: 320px;
+    height: 70px;
+}
+
+#questionDiv .dragDropSmallBox{ /* Small answer divs */
+    cursor: pointer;
+    width: 50px;
+}
+
+#questionDiv .destinationBox{ /* Small empty boxes for the questions - i.e. where answers could be dragged*/
+    background-color: #DDD;
+    width: 320px;
+    height: 70px;
+    margin-bottom: 4px;
+}
+
+#questionDiv .correctAnswer{ /* CSS indicating correct answer */
+    background-color: #008000;
+    color: #fff;
+    border: 1px solid #000;
+    font-size: 0.75em;
+    height: 70px;
+    font-weight: bold;
+    width: 318px;
+}
+
+#questionDiv .wrongAnswer{ /* CSS indicating wrong answer */
+    background-color: red;
+    color: #fff;
+    border: 1px solid #000;
+    font-size: 0.75em;
+    height: 70px;
+    font-weight: bold;
+    width: 318px;
+}
+
+#dragContent div{
+    background-color: #FFF;
+}
+
+#questionDiv .dragContentOver{ /* Mouse over question boxes - i.e. indicating where dragged element will be appended if mouse button is relased */
+    border: 1px solid #F00;
+    height: 70px;
+}
+
+#questionDiv #q1, #questionDiv #q2, #questionDiv #q3, #questionDiv #q4, #questionDiv #q5,#questionDiv #q6{
+    height: 20px;
+}
+
+#dragContent{
+    position: absolute;
+    display: none;
+}    
+
+.center{
+	text-align: center; 
+}
+
+.submitButton{
+	width: 200px; 
+	height: 35px;
+    margin: 50px 25px 0 0;
+    background-color: #FC0;
+    font-weight: bold;
+    color: #C00;
+}
+
+#feedback{
+	text-align: center; 
+	color: #090;
+}  
+
+

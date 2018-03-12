@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Drag and Drop Exercise</title>
+<link rel="stylesheet" href="dragndrop.css" type="text/css">
+<script src="dragndrop.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<h2 class="center">Match the following topoisomerase inhibitors<br> to the correct category.</h2>
+
+<div id="feedback"></div>
+
+<!-- DRAG AND DROP -->
+<div id="dragScriptContainer">
+    <div id="answerDiv">
+        <div class="dragDropSmallBox" id="a1"><p>Irinotecan (Camptosar<sup>&reg;</sup>)</p></div>
+        <div class="dragDropSmallBox" id="a2"><p>Mitoxantrone (Novantrone<sup>&reg;</sup>)</p></div>
+        <div class="dragDropSmallBox" id="a3"><p>Doxorubicin hydrochloride (Adriamycin<sup>&reg;</sup>)</p></div>
+        <div class="dragDropSmallBox" id="a4"><p>Etoposide (Vepesid<sup>&reg;</sup>)</p></div>
+        <div class="dragDropSmallBox" id="a1"><p>Topotecan (Hycamtin<sup>&reg;</sup>)</p></div>
+        <div class="dragDropSmallBox" id="a3"><p>Idarubicin (Idamycin<sup>&reg;</sup>)</p></div>
+    </div>
+    
+    
+    <div id="questionDiv">
+        <div class="dragDropSmallBox" id="q1"></div>
+        <div class="destinationBox">Topoisomerase Inhibitor I</div>
+        <div class="dragDropSmallBox" id="q3"></div>
+        <div class="destinationBox">Anthracyclines</div>
+        <div class="dragDropSmallBox" id="q4"></div>
+        <div class="destinationBox">Epipodophyllotoxin</div>
+        <div class="dragDropSmallBox" id="q3"></div>
+        <div class="destinationBox">Anthracyclines</div>
+        <div class="dragDropSmallBox" id="q2"></div>
+        <div class="destinationBox">Miscellaneous</div>
+        <div class="dragDropSmallBox" id="q1"></div>
+        <div class="destinationBox">Topoisomerase Inhibitor I</div>
+    </div>
+</div>
+
+<div id="dragContent"></div>
+<div style="clear: both;"></div>
+
+<div style="text-align:center;"><input type="button" class="submitButton" onclick="dragDropResetForm(); return false" value="Reset Activity">
+</div>
+<div style="clear: both;"></div>
+
+</body>
+</html>
